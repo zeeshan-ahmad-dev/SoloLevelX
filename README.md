@@ -11,18 +11,16 @@
 
 <table>
   <tr>
-    <td align="center"><img src="./screenshots/status.png" width="180px"/><br/><sub>Status & Quest Info</sub></td>
-    <td align="center"><img src="./screenshots/quests.png" width="180px"/><sub>Daily & Side Quests</sub></td>
+    <td align="center"><img src="./screenshots/Home.png" width="180px"/><br/><sub>Home Page</sub></td>
+    <td align="center"><img src="./screenshots/quests.png" width="180px"/><br/><sub>Quests</sub></td>
     <td align="center"><img src="./screenshots/leaderboard.png" width="180px"/><br/><sub>Top Hunters Leaderboard</sub></td>
   </tr>
   <tr>
-    <td align="center"><img src="./screenshots/stats.png" width="180px"/><br/><sub>Stats & Streak Info</sub></td>
-    <td align="center"><img src="./screenshots/history.png" width="180px"/><br/><sub>Quest History</sub></td>
-    <td align="center"><img src="./screenshots/home.png" width="180px"/><br/><sub>Home Page</sub></td>
+    <td align="center"><img src="./screenshots/streaks-info.png" width="180px"/><br/><sub>Stats & Streak Info</sub></td>
+    <td align="center"><img src="./screenshots/quests history.png" width="180px"/><br/><sub>Quest History</sub></td>
+    <td align="center"><img src="./screenshots/notification.png" width="180px"/><br/><sub>Notification</sub></td>
   </tr>
 </table>
-
-> **To add screenshots:** create a `/screenshots` folder in the repo root and place your images there with the filenames above.
 
 ---
 
@@ -43,23 +41,33 @@ The goal was to build the app that fans actually wanted: one that captures the l
 ## Features
 
 ### Quest System
-- **Main Quests** -- Daily mandatory challenges (push-ups, sit-ups, squats, running). Failing has consequences, just like in the system.
+- **Main Quests** -- Daily mandatory challenges (push-ups, sit-ups, squats, running). These must be completed every day.
 - **Side Quests** -- Optional bonus quests for extra XP beyond the daily minimum.
 - **Custom Quests** -- Users can create their own habit-based quests, complete them at their own pace, and earn XP.
 
 ### Progression
 - Earn XP by completing quests
 - Level up and rank up over time (E -> D -> C -> B -> A -> S)
-- HP system tied to daily quest completion
 - Streak tracking -- best streak and current streak visible on the stats page
+
+### Penalty System
+- You start with **5 HP**
+- Missing a Main Quest costs **1 HP**
+- Reaching **0 HP triggers a Respawn** -- all progress, stats, quests, and XP are fully reset
+- This mirrors the consequence system from the anime, making consistency matter
+
+### Coins and Shop
+- Completing quests rewards you with both **XP and Coins**
+- Coins can be spent on:
+  - **XP Potions** -- boost your XP progression
+  - **HP Potions** -- restore lost HP and protect your progress from a Respawn
 
 ### Leaderboard
 - Global Top 15 leaderboard (Top Hunters)
 - Ranked by XP with level and rank displayed
-- Your own rank highlighted at the top
 
 ### Quest History
-- Full log of past quest completions and failures
+- Full log of past 30 days of quest completions and failures
 - Cumulative stats: total push-ups, sit-ups, squats, and distance run
 
 ---
