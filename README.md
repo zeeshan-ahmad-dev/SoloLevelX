@@ -1,9 +1,11 @@
 # SoloLevelX
 
-**A Solo Leveling-inspired fitness tracking web app** built to replicate the feel of the Hunter System from the anime/manhwa, where users complete daily quests, earn XP, and climb a global leaderboard.
+## A Solo Leveling inspired fitness tracker that gamifies discipline through XP, leveling, HP, and personalized quests.
+
+SoloLevelX is a gamified habit tracker and productivity app inspired by the system of the Solo Leveling anime and manhwa. It transforms daily fitness routines and habit building into an RPG-style progression system, complete with XP, leveling, HP, streaks, titles, achievements, and personalized quests that users can tailor to their own goals. A live Hunter leaderboard lets users track their rank against others, turning self-improvement into an immersive RPG-style experience. Built with Vue.js, Node.js, Express.js, and MySQL, SoloLevelX combines fitness tracking, productivity, and habit building into a system designed to keep users consistent every day.
 
 🌐 **Live App:** [sololevelx.vercel.app](https://sololevelx.vercel.app)
-&nbsp;|&nbsp; 👥 **700+ Registered Users** &nbsp;|&nbsp; ⚡ **~30 Daily Active Users**
+&nbsp;|&nbsp; 👥 **1800+ Registered Users** &nbsp;|&nbsp; ⚡ **~65 Daily Active Users**
 
 ---
 
@@ -24,51 +26,45 @@
 
 ---
 
-## Motivation
-
-A few Solo Leveling fitness apps existed before this one, but each had limitations:
-
-| App | Limitations |
-|-----|-------------|
-| Arise AI | Paid, feature-heavy, UI does not match the system aesthetic |
-| OurSoloLeveling | Limited to the 4 main quests, no custom quests, has since shut down |
-| **SoloLevelX** | Free, actively maintained, UI designed to feel like the actual Hunter System |
-
-The goal was to build the app that fans actually wanted: one that captures the look, feel, and structure of the system from Solo Leveling, not just a generic habit tracker with the name attached.
-
----
-
 ## Features
 
 ### Quest System
-- **Main Quests** -- Daily mandatory challenges (push-ups, sit-ups, squats, running). These must be completed every day.
-- **Side Quests** -- Optional bonus quests for extra XP beyond the daily minimum.
-- **Custom Quests** -- Users can create their own habit-based quests, complete them at their own pace, and earn XP.
+- **Main Quests** — Complete daily fitness challenges to maintain your progress.
+- **Side Quests** — Take on optional challenges to earn additional XP and Coins.
+- **Custom Quests** — Create personalized fitness or habit-based quests tailored to your goals.
+- **Event Quests** — Participate in limited-time challenges for exclusive rewards.
 
-### Progression
-- Earn XP by completing quests
-- Level up and rank up over time (E -> D -> C -> B -> A -> S)
-- Streak tracking -- best streak and current streak visible on the stats page
+### Weekly Training
+- Create a personalized weekly workout schedule.
+- Plan your workouts around your own fitness goals.
 
-### Penalty System
-- You start with **5 HP**
-- Missing a Main Quest costs **1 HP**
-- Reaching **0 HP triggers a Respawn** -- all progress, stats, quests, and XP are fully reset
-- This mirrors the consequence system from the anime, making consistency matter
+### RPG Progression
+- Earn **XP** and level up by completing quests.
+- Advance through Hunter ranks (**E → D → C → B → A → S**).
+- Unlock **Titles** based on your achievements.
+- Track your progress through stats and achievements.
 
-### Coins and Shop
-- Completing quests rewards you with both **XP and Coins**
-- Coins can be spent on:
-  - **XP Potions** -- boost your XP progression
-  - **HP Potions** -- restore lost HP and protect your progress from a Respawn
+### HP & Respawn System
+- Start with **5 HP**.
+- Missing a Main Quest costs **1 HP**.
+- Reaching **0 HP** triggers a **Respawn**, resetting your progress and encouraging consistency.
 
-### Leaderboard
-- Global Top 15 leaderboard (Top Hunters)
-- Ranked by XP with level and rank displayed
+### Streaks & Statistics
+- Track your current and longest streaks.
+- View your quest history and completion statistics.
+- Monitor total workouts, running distance, and other lifetime achievements.
 
-### Quest History
-- Full log of past 30 days of quest completions and failures
-- Cumulative stats: total push-ups, sit-ups, squats, and distance run
+### Coins & Shop
+- Earn **Coins** by completing quests.
+- Spend Coins on XP Potions to level up faster or HP Potions to protect your progress.
+
+### Leaderboards
+- Compete with other players on the global **Top Hunters** leaderboard.
+- Compare XP, Hunter Rank, and Level in real time.
+
+### Notifications
+- Daily quest reminders to help you stay consistent.
+- Notifications for Event Quests and important updates.
 
 ---
 
@@ -79,18 +75,21 @@ The goal was to build the app that fans actually wanted: one that captures the l
 | Frontend | Vue.js |
 | Backend | Node.js + Express.js |
 | Database | MySQL |
-| Deployment | Vercel + Railway |
+| Deployment | Vercel + Railway + Aiven |
 
-> Built with the **MEVN stack** (MySQL, Express.js, Vue.js, Node.js)
+> Built with Vue.js, Node.js, Express.js, and MySQL.
 
 ---
 
 ## Project Status
 
-SoloLevelX is **live and actively maintained**. Updates ship roughly every 2 to 8 weeks covering new features, UI improvements, and bug fixes. The app has been running continuously with a growing user base since launch.
+SoloLevelX is **live and actively maintained**, with regular feature updates, UI improvements, and bug fixes shipped since launch.
 
 ---
 
 ## Disclaimer
 
-SoloLevelX is a fan-made project inspired by the *Solo Leveling* manhwa and anime series. All rights to Solo Leveling belong to Chugong and D&C Media. This project is non-commercial and built purely out of passion for the series.
+SoloLevelX is a fan-made project inspired by the *Solo Leveling* manhwa and anime series. All rights to Solo Leveling belong to Chugong and D&C Media. SoloLevelX is not affiliated with, endorsed by, or sponsored by the original creators or publishers.
+
+## Support
+SoloLevelX is free to use. If you'd like to support development, you can do so via [Gumroad](your-link).
