@@ -92,4 +92,4 @@ SoloLevelX is **live and actively maintained**, with regular feature updates, UI
 SoloLevelX is a fan-made project inspired by the *Solo Leveling* manhwa and anime series. All rights to Solo Leveling belong to Chugong and D&C Media. SoloLevelX is not affiliated with, endorsed by, or sponsored by the original creators or publishers.
 
 ## Support
-SoloLevelX is free to use. If you'd like to support development, you can do so via [Gumroad](your-link).
+SoloLevelX is free to use. If you'd like to support development, you can do so via [Gumroad](https://7414731545698.gumroad.com/coffee).
